@@ -1,11 +1,11 @@
 var playlist = {}
 
-function updatePlaylist(obj,a,s){
-  obj.a=s
-  return obj
+function updatePlaylist(playlist,a,s){
+  playlist[a]=s
+  return playlist
 }
 
 function removeFromPlaylist(obj,a){
-  delete obj.a
+  delete obj[a]
   return obj
 }
